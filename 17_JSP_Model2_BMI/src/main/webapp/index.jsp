@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <title>BMI 검사</title>
 
-
-    <link rel="stylesheet" href="/09_BMI/css/bmi.css">
-    <script src="/09_BMI/js/main.js" defer></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bmi.css">
+    <script src="${pageContext.request.contextPath}/js/main.js" defer></script>
 </head>
 <body>
 
-<form id="form" action="/09_BMI/result.jsp" method="post" enctype="multipart/form-data">
+<form id="form" action="${pageContext.request.contextPath}/HC" method="post" enctype="multipart/form-data">
     <div>
         <h2>BMI 검사</h2>
     </div>
@@ -22,21 +21,21 @@
         <div class="items">
             <div class="item1">이름</div>
             <div class="item2">
-                <input id="nameInput" name="name" class="text-input" placeholder="필수 2글자 이상" />
+                <input id="nameInput" name="name" class="text-input" placeholder="필수 2글자 이상"/>
             </div>
         </div>
 
         <div class="items">
             <div class="item1">키(CM)</div>
             <div class="item2">
-                <input id="heightInput" name="height" class="text-input" placeholder="3자리 이상, 숫자만" type="number" />
+                <input id="heightInput" name="height" class="text-input" placeholder="3자리 이상, 숫자만" type="number"/>
             </div>
         </div>
 
         <div class="items">
             <div class="item1">체중(KG)</div>
             <div class="item2">
-                <input id="weightInput" name="weight" class="text-input" placeholder="숫자만, 공백X" type="number" />
+                <input id="weightInput" name="weight" class="text-input" placeholder="숫자만, 공백X" type="number"/>
             </div>
         </div>
 

@@ -12,10 +12,16 @@ public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("GET");
 
+        request.getRequestDispatcher("age/index.jsp").forward(request, response);
+
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        System.out.println("POST");
+
         Model.calcAge(request);
 
         request.getRequestDispatcher("age/output.jsp").forward(request, response);
-
     }
 
     public void destroy() {

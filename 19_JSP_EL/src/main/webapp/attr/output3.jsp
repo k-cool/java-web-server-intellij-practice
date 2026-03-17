@@ -14,4 +14,4 @@
 	<h1>${posTest}원이 모자라요.</h1>
 	<a href="${pageContext.request.contextPath}">처음으로</a>
 </body>
-</html>.
+</html>

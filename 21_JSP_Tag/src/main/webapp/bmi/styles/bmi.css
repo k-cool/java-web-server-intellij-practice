@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Pretendard:wght@400;600&display=swap');
+
+/* 전체 페이지 기본 설정 (레이아웃 건들지 않음) */
+body{
+    margin:0;
+    background:linear-gradient(135deg,#ffd6e7,#d6f0ff);
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 카드 등장 애니메이션 */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-10px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 카드 박스 (범위 제한) */
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    width:320px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
+    margin:auto;
+    margin-top:60px;
+
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* hover 효과 */
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* 제목 */
+.card > div:first-child{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:25px;
+    color:#ff7aa2;
+}
+
+/* 라벨 */
+.card form div{
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:600;
+    color:#555;
+}
+
+/* input */
+.card input{
+    width:240px;
+    padding:9px 10px;
+    border-radius:12px;
+    border:2px solid #ffd6e7;
+    outline:none;
+    transition:0.25s;
+}
+
+.card input:hover{
+    transform:scale(1.02);
+}
+
+.card input:focus{
+    border-color:#ff7aa2;
+    transform:scale(1.05);
+    box-shadow:0 4px 12px rgba(255,122,162,0.25);
+}
+
+/* number input 버튼 제거 */
+.card input[type="number"]::-webkit-outer-spin-button,
+.card input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* select */
+.card select{
+    width:260px;
+    padding:9px;
+    border-radius:12px;
+    border:2px solid #d6f0ff;
+    background:white;
+}
+
+/* 버튼 */
+.card button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:15px;
+    background:#ff7aa2;
+    color:white;
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.card button:hover{
+    background:#ff4f85;
+    transform:translateY(-2px) scale(1.03);
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card button:active{
+    transform:scale(0.97);
+}

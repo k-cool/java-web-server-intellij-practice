@@ -1,0 +1,39 @@
+.menu-container {
+    border: 2px solid tomato;
+    width: 320px;
+    background-color: #ecf0f1;
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+
+.menu-row {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border-bottom: 1px solid black;*/
+    line-height: 120%;
+}
+
+.menu-row:last-child {
+    border-bottom: none;
+}
+
+.menu-row:first-child:hover {
+    background-color: transparent;
+    cursor: default;
+}
+
+.menu-row:hover {
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -19,7 +19,7 @@
 
 --%>
 
-<form action="${pageContext.request.contextPath}/age">
+<form action="${pageContext.request.contextPath}/age" method="post">
     <input type="text" placeholder="출생년도" name="birth"/>
     <button>나이확인</button>
 </form>

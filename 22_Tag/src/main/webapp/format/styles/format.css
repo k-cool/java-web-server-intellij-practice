@@ -1,0 +1,17 @@
+
+.fmt-container {
+    width: 560px;
+}
+
+.fmt-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.fmt-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

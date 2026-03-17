@@ -14,7 +14,7 @@ public class HomeController extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("GET");
 
-		request.getRequestDispatcher("index.html").forward(request, response);
+		request.getRequestDispatcher("attr/index.html").forward(request, response);
 
 	}
 

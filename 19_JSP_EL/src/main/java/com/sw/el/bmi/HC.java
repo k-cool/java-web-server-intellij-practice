@@ -13,9 +13,7 @@ public class HC extends HttpServlet {
 
         request.setCharacterEncoding("UTF-8");
 
-        BmiModel.calc(request);
-
-        request.getRequestDispatcher("bmi/result.jsp").forward(request, response);
+        request.getRequestDispatcher("bmi/index.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

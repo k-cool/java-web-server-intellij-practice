@@ -14,7 +14,7 @@ public class HC extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("GET");
 
-		request.getRequestDispatcher("pay").forward(request, response);
+		request.getRequestDispatcher("pay/").forward(request, response);
 
 	}
 
